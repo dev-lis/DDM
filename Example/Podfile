@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'DDM_Example' do
+  pod 'DDM', :path => '../'
+
+  target 'DDM_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
