@@ -13,14 +13,13 @@ public struct CollectionReusableSupplementaryViewConfigurator<ViewType: Configur
     public init() {}
     
     public func configureHeader(_ collectionView: UICollectionView, indexPath: IndexPath, viewModel: CollectionReusableSupplementaryViewModelConfigurable) -> UICollectionReusableView {
-        var view = collectionView.dequeueReusableView(with: ViewType.self, of:
-                UICollectionElementKindSectionHeader, for: indexPath)
+        var view = collectionView.dequeueReusableView(with: ViewType.self, of: UICollectionView.elementKindSectionHeader, for: indexPath)
         view.configure(viewModel as? ViewModel)
         return view
     }
     
     public func configureFooter(_ collectionView: UICollectionView, indexPath: IndexPath, viewModel: CollectionReusableSupplementaryViewModelConfigurable) -> UICollectionReusableView {
-        var view = collectionView.dequeueReusableView(with: ViewType.self, of: UICollectionElementKindSectionFooter, for: indexPath)
+        var view = collectionView.dequeueReusableView(with: ViewType.self, of: UICollectionView.elementKindSectionFooter, for: indexPath)
         view.configure(viewModel as? ViewModel)
         return view
     }
