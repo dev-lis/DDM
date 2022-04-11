@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DDM
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,8 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let viewModel = CollectionViewModelImpl()
+        let ddm = CollectionViewDataDisplayManagerImpl()
+        let controller = CollectionViewController(viewModel: viewModel, ddm: ddm)
+        let navController = UINavigationController(rootViewController: controller)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
