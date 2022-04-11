@@ -1,0 +1,6 @@
+framework module DDM {
+  umbrella header "DDM-umbrella.h"
+
+  export *
+  module * { export * }
+}
