@@ -1,6 +1,5 @@
 # DDM
 
-[![CI Status](https://img.shields.io/travis/dev-lis/DDM.svg?style=flat)](https://travis-ci.org/dev-lis/DDM)
 [![Platforms](https://img.shields.io/badge/Platforms-iOS-blue?style=flat-square)](https://developer.apple.com/macOS)
 [![iOS](https://img.shields.io/badge/iOS-12.0-blue.svg)](https://developer.apple.com/iOS)
 [![Version](https://img.shields.io/cocoapods/v/DDM.svg?style=flat)](https://cocoapods.org/pods/DDM)
