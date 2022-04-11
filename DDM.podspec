@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'DDM'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = 'Data Display Manager'
     
     s.description      = 'Data Display Manager for TableView & CollectionView with MVVM'
